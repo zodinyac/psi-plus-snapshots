@@ -143,6 +143,7 @@ public:
 	QString getJid(int account);
 	QString getId(int account);
 	QString getName(int account);
+	QString getNick(int account);
 	QStringList getRoster(int account);
 	int findOnlineAccountForContact(const QString &jid) const;
 

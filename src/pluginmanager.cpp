@@ -621,6 +621,15 @@ QString PluginManager::getName(int account) const
 	return nm;
 }
 
+QString PluginManager::getNick(int account) const
+{
+	QString nm;
+	PsiAccount *pa = accountIds_.account(account);
+	if(pa)
+		nm = pa->nick();
+	return nm;
+}
+
 int PluginManager::findOnlineAccountForContact(const QString &jid) const
 {
 	Jid j(jid);

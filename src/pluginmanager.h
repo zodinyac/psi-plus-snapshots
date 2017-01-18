@@ -140,6 +140,7 @@ private:
 	QString getJid(int account) const;
 	QString getId(int account) const;
 	QString getName(int account) const;
+	QString getNick(int account) const;
 	int findOnlineAccountForContact(const QString &jid) const;
 
 	bool isSelf(int account, const QString& jid) const;

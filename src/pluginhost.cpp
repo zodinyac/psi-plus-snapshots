@@ -1082,6 +1082,11 @@ QString PluginHost::getName(int account)
 	return manager_->getName(account);
 }
 
+QString PluginHost::getNick(int account)
+{
+	return manager_->getNick(account);
+}
+
 int PluginHost::findOnlineAccountForContact(const QString &jid) const
 {
 	return manager_->findOnlineAccountForContact(jid);
